@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    
+    <header> <!-- Início do cabeçalho -->
+
+        <div class="logo">
+
+            <img src="/img/logo.png" alt="Logo">
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        
+    </header> <!-- Fim do cabeçalho -->
+
+
+    <section class="banner"> <!-- Início do Banner -->
+
+        <div class="banner-text">
+
+            <h1>Bem-vindo à Clínica Médica</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est distinctio cum quae, deserunt, amet dolor labore ipsam fugit ut atque explicabo reiciendis numquam nobis nam recusandae voluptatibus accusantium itaque cumque?</p>
+
+        </div>
+
+        <img src="/img/banner.jpg" alt="banner">
+
+    </section> <!-- Fim do Banner -->
+
+    
+    <!-- Seção principal com imagem e texto de apresentação -->
+    <main>
+
+        <section class="intro">
+
+            <!-- Imagem ilustrativa da clinica -->
+            <img src="/img/clinica.jpg" alt="clinica">
+
+            <div class="text">
+
+                <!-- Texto de boas-vindas -->
+                 <h2>Atendimento de Qualidade</h2>
+                 <p>Atendimento humanizado com profissionais qualificados e tecnologia de ponta para garantir a melhor experiência aos nossos pacientes.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Seção de especialidades -->
+        <section id="especialidades">
+
+            <h2>Nossas Especialidades</h2>
+
+            <!-- <ul>
+                <li>Cardiologia</li>
+                <li>Dermatologia</li>
+                <li>Ortopedia</li>
+                <li>Pediatria</li>
+            </ul> -->
+
+            <div class="container-card">
+
+                <div class="card">
+                    <img src="/img/cardiologia.png" alt="Cardiologia">
+                    <p>Cardiologia</p>
+                </div>
+
+                <div class="card">
+                    <img src="/img/dermatologia.jpg" alt="Cardiologia">
+                    <p>Dermatologia</p>
+                </div>
+
+                <div class="card">
+                    <img src="/img/ortopedista.jpg" alt="Cardiologia">
+                    <p>Ortopedista</p>
+                </div>
+
+                <div class="card">
+                    <img src="/img/pediatra.jpeg" alt="Cardiologia">
+                    <p>Pediatra</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Formulário de Contato -->
+        <section id="formulario-contato">
+
+            <form>
+
+                <h2>Entre em contato</h2>
+
+                <form action="https://api.staticforms.xyz/submit" method="post">  
+                    <label for="">Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                    <label for="">Email</label>
+                    <input type="email" name="Email" placeholder="Digite seu email" autocomplete="off" required>
+                    <label for="">Mensagem</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Digite aqui sua mensagem" required></textarea> <!-- área de texto -->
+                    <button type="submit">Enviar</button>
+        
+                    <input type="hidden" name="accessKey" value="3ece324a-793c-4b74-9fc9-9c7745673422">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/formulario/obrigado.html">
+                </form><!-- method post: envia para o servidor. method get: consulta algum dado no servidor -->
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé com informações de contato -->
+     <footer id="contato">
+        <p>Endereço: Ed. Centro Médico Lúcio Costa, Brasília, DF</p>
+        <p>Telefone: (61) 3554-7436</p>
+        <p>Horário: Segunda a Sexta, das 08h às 18h</p>
+     </footer>
+
+
+</body>
+</html>

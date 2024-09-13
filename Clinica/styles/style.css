@@ -1,0 +1,232 @@
+/* Estilos globais do site */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+header{
+    background-color: #007b5e;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header .logo img{
+    height: 75px;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative; /* Necessário para o pseudo-elemento ::after */
+    padding-bottom: 5px; /* Espaço extra para a linha embaixo */
+}
+
+header nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Animação da linha */
+}
+
+header nav ul li a:hover::after{
+    width: 100%; /* A linha aparece ao passar o mouse */
+}
+
+/* Estilos do banner */
+.banner{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #e2f0d9;
+}
+
+.banner-text h1{
+    color: #007b5e;
+}
+
+.banner img{
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+/* Início config main intro */
+
+main .intro{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro img{
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.intro .text h2{
+    color: #007b5e;
+}
+
+/* Inicio config especialidades */
+
+#especialidades{
+    text-align: center;
+    margin-bottom: 75px;
+    background-color: #e2f0d9;
+    padding-bottom: 75px;
+}
+
+#especialidades h2{
+    padding-top: 35px;
+    color: #007b5e;
+}
+
+.container-card{
+    
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap; /* Permite a quebra de linha se os cards não couberem */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento interno da área do container */
+}
+
+.card{
+    background-color: #007b5e;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.card img{
+    width: 300px;
+    height: 250px;
+}
+
+.card p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    scale: 1.25;
+}
+
+/* Inicio config form */
+
+#formulario-contato{
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto; /* Que isso pai, slk, centraliza demais */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #ffffff;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#formulario-contato h2{
+    color: #000000;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+#formulario-contato form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+    border: 1px solid;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    border: 1px solid;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #007b5e;
+    border: 1px solid;
+    border-radius: 10px;
+    /* background: transparent; */
+    /* border: 2px solid;*/
+    color: #f5f5f5; 
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover{
+    background-color: #093811;
+    color: #ffffff;
+}
+
+/* form button:focus{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+} */
+
+
+/* Iniciando config footer */
+footer{
+    background-color: #007b5e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 75px;
+}
